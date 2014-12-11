@@ -1,0 +1,28 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Seti_monokai (SL).tmTheme",
+	"disabled_single_snippets": "fig meta nav ol script style ul",
+	"font_options": "subpixel_antialias",
+	"font_size": 14,
+	"highlight_line": false,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Seti.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"':,.;<>~!@#%^&*|+=[]{}`~?",
+	"word_wrap": true
+}
