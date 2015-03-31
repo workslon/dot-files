@@ -51,6 +51,6 @@ function fish_prompt
 	end
 	end
 
-	echo -n -s $arrow $cwd $git_info $green ' ❯ ' $normal
+	echo -n -s $arrow $cwd $git_info $green ' › ' $normal
 
 end
