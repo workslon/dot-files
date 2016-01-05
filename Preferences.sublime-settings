@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/Seti_monokai (SL).tmTheme",
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"disabled_single_snippets": "fig meta nav ol script style ul",
 	"font_options": "subpixel_antialias",
 	"font_size": 14,
