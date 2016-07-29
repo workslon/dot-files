@@ -12,36 +12,6 @@ alias proxy "mitmdump -s replace.py"
 # git shortcuts
 alias g "git"
 
-function app-redux
-  mkdir build
-  mkdir src
-  touch index.html
-  touch webpack.config.js
-  cd src/
-  mkdir components
-  mkdir reducers
-  mkdir stores
-  touch app.js
-  cd ../
-  sublime (pwd)
-end
-
-function app-flux
-  mkdir build
-  mkdir src
-  touch index.html
-  touch webpack.config.js
-  cd src/
-  mkdir components
-  mkdir constants
-  mkdir dispatchers
-  mkdir actions
-  mkdir stores
-  touch app.js
-  cd ../
-  sublime (pwd)
-end
-
 function fish_prompt
   # set_color yellow
   # echo -n (date +'%H:%M') ' '
