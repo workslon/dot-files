@@ -1,9 +1,9 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
 	"disabled_single_snippets": "fig meta nav ol script style ul",
 	"font_options": "subpixel_antialias",
-	"font_size": 14,
+	"font_size": 16,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -19,8 +19,9 @@
 	],
 	"scroll_past_end": true,
 	"soda_folder_icons": true,
+	"spell_check": false,
 	"tab_size": 2,
-	"theme": "Seti.sublime-theme",
+	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_separators": "./\\()\"':,.;<>~!@#%^&*|+=[]{}`~?",
