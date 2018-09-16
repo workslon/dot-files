@@ -3,11 +3,12 @@ alias .. "cd .."
 alias ... "cd ../.."
 alias .... "cd ../../.."
 alias ..... "cd ../../../.."
-alias se "cd ~/Dropbox\ \(MaxySEDEV\)/Users/Vitaliy"
-alias slon "cd ~/Dropbox\ \(Personal\)/Public/devel/projects/Slon"
-alias mm "cd ~/Dropbox\ \(Personal\)/Public/devel/projects/Maxymiser"
 alias server "python -m SimpleHTTPServer 8000"
 alias proxy "mitmdump -s replace.py"
+alias c "cd ~/leanconvert/clients"
+alias p "cd ~/leanconvert/projects"
+alias pl "cd ~/leanconvert/playground"
+alias dynamodb-local "java -Djava.library.path=.~/dynamodb_local_latest/DynamoDBLocal_lib -jar ~/dynamodb_local_latest/DynamoDBLocal.jar -sharedDb"
 
 # git shortcuts
 alias g "git"
@@ -51,6 +52,28 @@ function fish_prompt
   end
   end
 
-  echo -n -s $arrow $cwd $git_info $green ' › ' $normal
+  if set -q VIRTUAL_ENV
+    echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+  end
 
+  echo -n -s $arrow $cwd $git_info $green ' › ' $normal
+  source ~/google-cloud-sdk/path.fish.inc
 end
+
+# content has to be in .config/fish/config.fish
+# if it does not exist, create the file
+setenv SSH_ENV $HOME/.ssh/environment
+
+function start_agent
+    echo "Initializing new SSH agent ..."
+    ssh-agent -c | sed 's/^echo/#echo/' > $SSH_ENV
+    chmod 600 $SSH_ENV
+    . $SSH_ENV > /dev/null
+    ssh-add
+end
+
+eval (python2.7 -m virtualfish)
+
+set -x GOPATH $HOME/go
+set -x PATH $PATH $HOME/go/bin $GOPATH/bin
+set -x PATH $PATH $HOME/go/bin $GOROOT/bin
